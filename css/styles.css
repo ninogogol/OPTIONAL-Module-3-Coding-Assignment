@@ -4,7 +4,7 @@
     padding: 0;
 }
 .navbar-dark .navbar-brand {
-    color: #0c0c0c;
+    color: #0c0c0c!important;
     font-size: 30px;
     font-weight: bold;
 }
@@ -14,6 +14,17 @@
     font-weight: bold;
     text-align: center;
     border: 1px solid black;
+}
+.navbar-dark .navbar-toggler-icon{
+	border: 1px solid black;
+}
+.navbar-nav .nav-link {
+    color: black!important;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 1px solid black;
+    margin: 0px 1px;
+    background: white;
 }
 h1{
 	text-align: center;
@@ -34,4 +45,9 @@ h4{
 }
 a{
 	color: blue;
+}
+@media (min-width: 768px){
+.navbar-expand-md .navbar-nav .nav-link {
+    visibility: collapse;
+    }
 }
